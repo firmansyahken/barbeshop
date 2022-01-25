@@ -17,7 +17,7 @@ const Navbar = () => {
     }
 
     const handleChange = e => {
-        if (e.keyCode == 13) {
+        if (e.keyCode === 13) {
             const keyword = e.target.value
             navigate('/products/search/' + keyword)
         }
