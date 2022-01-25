@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Banner, Card, Product } from '../../components';
 import { DiamondIcon, FlashIcon, HeroImage } from '../../assets'
 import './index.css'
-import { Link } from 'react-router-dom';
 
 const Home = () => {
     const [products, setProducts] = useState([])
