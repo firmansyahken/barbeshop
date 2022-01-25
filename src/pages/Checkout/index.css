@@ -1,0 +1,29 @@
+.checkout {
+    padding: 5rem 0;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.checkout div {
+    margin-bottom: 15px;
+}
+
+.checkout .checkout_button {
+    margin-top: 50px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    background-color: #689AFF;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    font-size: var(--body-size);
+}
+
+@media (max-width: 768px) {
+    .checkout {
+        width: 100%;
+    }
+}    

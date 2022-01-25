@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --bg-color: #21282F;
+  --primary-color: #FFD34D;
+  --title-size: 50px;
+  --h1-size: 36px;
+  --h2-size: 28px;
+  --h3-size: 22px;
+  --body-size: 18px;
+  --action-size: 16px;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+
+.products {
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --title-size: 46px;
+    --h1-size: 28px;
+    --h2-size: 24px;
+    --h3-size: 20px;
+    --body-size: 18px;
+    --action-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --title-size: 42px;
+    --h1-size: 22px;
+    --h2-size: 20px;
+    --h3-size: 18px;
+    --body-size: 16px;
+    --action-size: 14px;
+  }
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --title-size: 38px;
+    --h1-size: 22px;
+    --h2-size: 20px;
+    --h3-size: 18px;
+    --body-size: 15px;
+    --action-size: 13px;
+  }
+
+  .products {
+    gap: 20px;
+  }
+}

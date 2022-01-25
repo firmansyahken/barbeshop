@@ -1,0 +1,128 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 1.5rem 0;
+    background-color: white;
+    z-index: 99;
+}
+
+.navbar .navbar_content {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbar_content .brand h2 {
+    font-size: var(--h2-size);
+    text-align: center;
+}
+
+.navbar .navbar_content .nav {
+    display: flex;
+    column-gap: 40px;
+}
+
+.navbar .navbar_content .nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: var(--action-size);
+    cursor: pointer;
+}
+
+.navbar .navbar_content .search .input_search {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    box-sizing: border-box;
+    background-color: #F1F2F4;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+}
+
+.navbar_mobile {
+    position: sticky;
+    top: 0;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 99;
+    display: none;
+    column-gap: 50px;
+}
+
+.navbar_mobile .brand h2 {
+    font-size: var(--h2-size);
+}
+
+.navbar_mobile .action {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.navbar_mobile .action input {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    box-sizing: border-box;
+    background-color: #F1F2F4;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+}
+
+.navbar_mobile .action i {
+    font-size: 25px;
+}
+
+.nav_mobile {
+    position: fixed;
+    background-color: white;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    top: -100%;
+    transition: all ease-in .3s;
+    z-index: 90;
+    display: none;
+}
+
+.nav_mobile.active {
+    top: 10%;
+}
+
+.nav_mobile .nav_main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.nav_mobile .nav_main a {
+    color: #000;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .navbar_mobile {
+        display: flex;
+    }
+
+    .nav_mobile {
+        display: flex;
+    }
+    
+}

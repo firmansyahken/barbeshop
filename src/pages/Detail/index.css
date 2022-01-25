@@ -1,0 +1,90 @@
+.detail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    padding: 4rem 0;
+}
+
+.detail .detail_image img {
+    max-width: 500px;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.detail .detail_content h1 {
+    font-size: var(--h1-size);
+    margin-bottom: 10px;
+}
+
+.detail .detail_content h2 {
+    font-size: var(--h2-size);
+    margin-bottom: 30px;
+}
+
+.detail .detail_content p {
+    font-size: var(--body-size);
+    margin-bottom: 40px;
+}
+
+.detail .detail_content .detail_action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detail .detail_content .buy_button {
+    padding: 15px 40px;
+    box-sizing: border-box;
+    background-color: #689AFF;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    font-size: var(--body-size);
+}
+
+.detail .detail_content .qty {
+    display: flex;
+    align-items: center;
+    column-gap: 1px;
+    padding: 2rem 0;
+}
+
+.detail .detail_content .qty button {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    outline: none;
+    border: none;
+    border: 1px solid;
+    font-size: var(--body-size);
+    cursor: pointer;
+}
+
+.detail .detail_content .qty input {
+    text-align: center;
+    width: 25%;
+    height: 38px;
+    background-color: white;
+    outline: none;
+    border: none;
+    border: 1px solid;
+    font-size: var(--body-size);
+}
+
+@media (max-width: 768px) {
+    .detail {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 50px;
+        padding: 2rem 0;
+    }
+
+    .detail .detail_image img {
+        height: 300px;
+    }
+    
+}

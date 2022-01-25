@@ -1,0 +1,10 @@
+.filter {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    padding: 4rem 0;
+}
+
+.filter h2 {
+    font-size: var(--h2-size);
+}

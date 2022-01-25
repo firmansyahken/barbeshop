@@ -1,0 +1,85 @@
+.wrapper {
+    max-width: 320px;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F1F2F4;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.back {
+    color: #000;
+    padding: 2rem;
+    text-decoration: none;
+}
+
+.form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form .input {
+    margin-bottom: 15px;
+}
+
+.form .input input {
+    width: 100%;
+    background-color: white;
+    border: none;
+    outline: none;
+    padding: 0.7rem 1rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.form button {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    box-sizing: border-box;
+    background-color: #689AFF;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.form button:hover {
+    cursor: pointer;
+    background-color: #4f89fc;
+}
+
+.wrapper p {
+    margin-top: 30px;
+    font-size: var(--action-size);
+    text-align: center;
+}
+
+.wrapper a {
+    font-size: var(--action-size);
+    color: #689AFF;
+    margin: auto;
+    display: block;
+}
+
+.wrapper .error {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #689AFF;
+    font-size: var(--action-size);
+}
+
+.wrapper .validation {
+    color: red;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.wrapper .form_footer {
+    text-align: center;
+}
