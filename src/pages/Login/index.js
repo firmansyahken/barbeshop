@@ -40,7 +40,6 @@ const Login = () => {
 
   return (
       <>
-        <Link to='/' className="back"> <i className="fa fa-arrow-left"></i> Kembali Keberanda</Link>
         <div className='wrapper'>
             <form method='POST' onSubmit={(e) => handleLogin(e)}>
                 <div className='form'>

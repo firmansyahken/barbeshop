@@ -48,7 +48,7 @@ const Detail = () => {
         <div className="detail">
           <div className="detail_image">
             <img
-              src={`https://barbeshop-api.herokuapp.com/storage/${product.photo}`}
+              src={product.photo}
               alt="thumb"
             />
           </div>

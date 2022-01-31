@@ -30,7 +30,7 @@ const Register = () => {
     }).then(r => r.json())
       .then(function (response) {
         const message = response.message
-        if (message == "Registration Success") {
+        if (message === "Registration Success") {
           navigate('/login')
         } else {
           setErrors(response.data)
@@ -41,7 +41,6 @@ const Register = () => {
 
   return (
     <>
-      <Link to='/' className="back"> <i className="fa fa-arrow-left"></i> Kembali Keberanda</Link>
       <div className="wrapper">
         <form method="POST" onSubmit={(e) => handleSubmit(e)}>
           <div className="form">
